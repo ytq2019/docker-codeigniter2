@@ -1,6 +1,6 @@
 FROM php:5.6-fpm-alpine
 
-MAINTAINER JG <julien@mangue.eu>
+MAINTAINER Richkey <yutianqi@ymt360.com>
 
 RUN apk add --no-cache --virtual .build-deps \
         $PHPIZE_DEPS \
