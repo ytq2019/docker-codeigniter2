@@ -14,5 +14,3 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
     && echo extension=memcached.so >> /usr/local/etc/php/conf.d/memcached.ini \
     && apt-get autoremove -y \
     && rm -rf /tmp/* /var/tmp/*
-    
-CMD ["memcached","-d","-u","root"]
