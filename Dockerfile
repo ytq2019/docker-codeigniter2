@@ -12,5 +12,4 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
     && echo post_max_size = 108M >> /usr/local/etc/php/conf.d/php.ini \
     && echo extension=memcached.so >> /usr/local/etc/php/conf.d/memcached.ini \
     && apt-get autoremove -y \
-    && apt-get \
     && rm -rf /tmp/* /var/tmp/*
