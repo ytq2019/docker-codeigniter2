@@ -5,7 +5,7 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
     memcached \
     libmemcached-dev zlib1g-dev \
     && pecl install memcached-2.2.0 \
-    && docker-php-ext-enable memcached \
+    && docker-php-ext-enable memcached memcache \
     && docker-php-ext-install mysql pdo_mysql mcrypt mysqli \
     && echo date.timezone=Asia/ShangHai >> /usr/local/etc/php/conf.d/php.ini \
     && echo upload_max_filesize = 100M >> /usr/local/etc/php/conf.d/php.ini \
