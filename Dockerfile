@@ -3,6 +3,7 @@ FROM php:5.6-fpm
 RUN apt-get update && apt-get -y --no-install-recommends install \
     libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev \
     memcached \
+    php5-mysql \
     libmemcached-dev zlib1g-dev \
     && pecl install memcached-2.2.0 \
     && docker-php-ext-enable memcached \
