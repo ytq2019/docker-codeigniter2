@@ -2,7 +2,7 @@ FROM php:5.6-fpm
 
 RUN apt-get update && apt-get -y --no-install-recommends install \
     # gd
-    libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev libpng12-dev \
+    libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev \
     # intl
     # libicu-dev \
     # imageick
