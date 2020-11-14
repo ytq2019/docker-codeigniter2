@@ -12,4 +12,4 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
     && apt-get autoremove -y \
     && rm -rf /tmp/* /var/tmp/*
     
-RUN memcached -d -u root
+CMD ["memcached","-d","-u","root"]
